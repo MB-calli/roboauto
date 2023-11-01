@@ -1,0 +1,46 @@
+{
+    "name": "Roboauto",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "pxt-rfid-rc522": "github:CalliTGS3/pxt-rfid-rc522#6fd2292a4639afbd54cbe127ee6e32f2a7a75257",
+        "pxt-oled-ssd1306": "github:MKleinSB/pxt-OLED-SSD1306#v0.0.5"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v4.0.29",
+        "tag": "v4.0.29",
+        "commits": "https://github.com/microsoft/pxt-calliope/commits/5a1ba75dc9f06c3fbddf4f40fc154cdd4dc826f1",
+        "target": "4.0.29",
+        "pxt": "7.0.18",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "pairing_mode": 1,
+                    "partial_flashing": 1,
+                    "dfu_service": 1,
+                    "event_service": 1,
+                    "device_info_service": 1
+                },
+                "stack_size": 2048,
+                "gatt_table_size": "0x800",
+                "sram_end": "0x20008000",
+                "RAM_SIZE": "\"32K\""
+            }
+        }
+    }
+}
